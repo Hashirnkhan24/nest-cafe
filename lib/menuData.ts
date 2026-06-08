@@ -65,7 +65,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: ['vegetarian'],
     tags: ['popular'],
     calories: 480,
-    image: '/images/exp-food.png',
+    image: '/images/menu-pancakes.png',
   },
 
   // --- Soups & Salads & Shares (Shares category) ---
@@ -234,7 +234,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: ['vegetarian'],
     tags: ['chef-recommendation'],
     calories: 210,
-    image: '/images/exp-food.png',
+    image: '/images/menu-dimsum.png',
   },
   {
     id: 'burnt-garlic-dimsum',
@@ -245,7 +245,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: ['vegetarian'],
     tags: [],
     calories: 180,
-    image: '/images/exp-food.png',
+    image: '/images/menu-dimsum.png',
   },
   {
     id: 'charcoal-chicken-dimsum',
@@ -256,7 +256,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: [],
     tags: ['popular', 'new'],
     calories: 240,
-    image: '/images/exp-food.png',
+    image: '/images/menu-dimsum.png',
   },
 
   // --- Toasts & Sandwiches ---
@@ -337,7 +337,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: ['vegetarian'],
     tags: ['popular', 'chef-recommendation'],
     calories: 680,
-    image: '/images/exp-food.png',
+    image: '/images/menu-pasta.png',
   },
   {
     id: 'pomodoro-rigatoni',
@@ -348,7 +348,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: ['vegetarian'],
     tags: [],
     calories: 450,
-    image: '/images/exp-food.png',
+    image: '/images/menu-pasta.png',
   },
   {
     id: 'bolognese-fettuccine',
@@ -359,7 +359,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: [],
     tags: ['popular'],
     calories: 710,
-    image: '/images/exp-food.png',
+    image: '/images/menu-pasta.png',
   },
   {
     id: 'margherita-pizza',
@@ -370,7 +370,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: ['vegetarian'],
     tags: ['popular'],
     calories: 820,
-    image: '/images/exp-food.png',
+    image: '/images/menu-pizza.png',
   },
   {
     id: 'truffle-funghi-pizza',
@@ -381,7 +381,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: ['vegetarian'],
     tags: ['chef-recommendation'],
     calories: 890,
-    image: '/images/exp-food.png',
+    image: '/images/menu-pizza.png',
   },
   {
     id: 'og-shin-slurp',
@@ -473,7 +473,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: ['vegetarian'],
     tags: ['popular'],
     calories: 410,
-    image: '/images/exp-food.png',
+    image: '/images/menu-tiramisu.png',
   },
   {
     id: 'tiramisu',
@@ -484,7 +484,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: ['vegetarian'],
     tags: ['chef-recommendation', 'popular'],
     calories: 380,
-    image: '/images/exp-food.png',
+    image: '/images/menu-tiramisu.png',
   },
   {
     id: 'skillet-cookie',
@@ -495,7 +495,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: ['vegetarian'],
     tags: ['new'],
     calories: 580,
-    image: '/images/exp-food.png',
+    image: '/images/menu-tiramisu.png',
   },
 
   // --- Coffee & Drinks ---
@@ -563,7 +563,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: ['vegetarian'],
     tags: ['new'],
     calories: 210,
-    image: '/images/exp-coffee.png',
+    image: '/images/menu-iced-drink.png',
   },
   {
     id: 'biscoff-shake',
@@ -574,7 +574,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: ['vegetarian'],
     tags: ['popular'],
     calories: 490,
-    image: '/images/exp-coffee.png',
+    image: '/images/menu-iced-drink.png',
   },
   {
     id: 'orange-spritz',
@@ -585,7 +585,7 @@ export const MENU_ITEMS: MenuItem[] = [
     dietary: ['vegetarian', 'vegan', 'gluten-free'],
     tags: ['new'],
     calories: 90,
-    image: '/images/exp-coffee.png',
+    image: '/images/menu-iced-drink.png',
   },
   {
     id: 'chamomile-tea',

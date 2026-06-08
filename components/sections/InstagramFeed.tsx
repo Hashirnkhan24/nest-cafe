@@ -16,7 +16,7 @@ export default function InstagramFeed() {
   const posts: InstagramPost[] = [
     {
       id: 'post-1',
-      image: '/images/img1.jpg',
+      image: '/images/exp-coffee.png',
       likes: 312,
       comments: 18,
       caption: 'Rituals of pour-over. Sourced from Nilgiris, poured in Bandra. #specialtycoffee',
@@ -24,7 +24,7 @@ export default function InstagramFeed() {
     },
     {
       id: 'post-2',
-      image: '/images/img2.avif',
+      image: '/images/exp-food.png',
       likes: 428,
       comments: 32,
       caption: 'Poached eggs & freshly baked sourdough. The perfect weekend companion.',
@@ -32,7 +32,7 @@ export default function InstagramFeed() {
     },
     {
       id: 'post-3',
-      image: '/images/img3.jpg',
+      image: '/images/room-bg.png',
       likes: 564,
       comments: 45,
       caption: 'Warm daylight filtering through the ferns. Your pocket of peace.',
@@ -40,7 +40,7 @@ export default function InstagramFeed() {
     },
     {
       id: 'post-4',
-      image: '/images/img4.avif',
+      image: '/images/exp-work.png',
       likes: 219,
       comments: 12,
       caption: 'A quiet corner, hot latte, and your favorite book. Stay as long as you like.',
@@ -48,7 +48,7 @@ export default function InstagramFeed() {
     },
     {
       id: 'post-5',
-      image: '/images/img5.avif',
+      image: '/images/hero-bg.png',
       likes: 387,
       comments: 24,
       caption: 'Double shot cortados to fuel your afternoon sessions.',
@@ -56,7 +56,7 @@ export default function InstagramFeed() {
     },
     {
       id: 'post-6',
-      image: '/images/img1.jpg',
+      image: '/images/exp-food.png',
       likes: 495,
       comments: 38,
       caption: 'A stack of fresh pastries fresh out of the oven. Come grab yours!',

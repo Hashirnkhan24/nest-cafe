@@ -1,9 +1,10 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Coffee, BookOpen, Leaf, Heart, Wind } from 'lucide-react';
+import { BookOpen, Leaf, Heart } from 'lucide-react';
 
 export default function Philosophy() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -36,7 +37,7 @@ export default function Philosophy() {
     // Animate stage elements sequentially
     tl
       // Initial Stage: The Room
-      .to('.room-bg', { opacity: 0.15, scale: 1.05, duration: 1 })
+      .to('.room-bg', { scale: 1.08, duration: 1 })
       .to('.text-stage-1', { opacity: 0, y: -20, duration: 0.5 }, '+=0.2')
 
       // Stage 2: Coffee
@@ -85,8 +86,17 @@ export default function Philosophy() {
           <div className="w-full max-w-[420px] aspect-square rounded-[2rem] border border-sage-800 bg-sage-900/50 backdrop-blur-sm relative overflow-hidden flex items-center justify-center p-8 shadow-inner-lg">
             
             {/* Visual Assembly Layers */}
-            {/* Layer 1: Pinned Background room effect (glowing overlay) */}
-            <div className="room-bg absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(110,139,126,0.35)_0%,transparent_70%)] opacity-0 scale-90 transition-all duration-700 pointer-events-none" />
+            {/* Layer 1: Pinned Background room photo (glowing overlay) */}
+            <div className="room-bg absolute inset-0 scale-100 transition-all duration-1000 pointer-events-none">
+              <Image
+                src="/images/room-bg.png"
+                alt="The Nest Sanctuary"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-sage-950/65 backdrop-blur-[0.5px]" />
+            </div>
 
             {/* Layer 2: Coffee Setup */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
