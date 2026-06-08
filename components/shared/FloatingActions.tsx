@@ -65,7 +65,7 @@ export default function FloatingActions() {
 			id: "directions",
 			label: "Directions",
 			icon: MapPin,
-			href: "https://maps.google.com/?q=123+Hill+Road+Bandra+West+Mumbai",
+			href: "https://maps.app.goo.gl/qFwucVmXRwN7SnwQ7",
 			target: "_blank",
 		},
 		{
