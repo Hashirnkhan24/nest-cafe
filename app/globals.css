@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom Font Families linked to CSS variables in layout.tsx */
+  --font-sans: var(--font-sans), system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-serif), Georgia, serif;
+
+  /* Sage Color Palette */
+  --color-sage-50: #f4f7f5;
+  --color-sage-100: #e3ebe6;
+  --color-sage-200: #c5d6ca;
+  --color-sage-300: #9eb8a7;
+  --color-sage-400: #7a9a85;
+  --color-sage-500: #6E8B7E;
+  --color-sage-600: #5a7469;
+  --color-sage-700: #4a5e55;
+  --color-sage-800: #3d4d46;
+  --color-sage-900: #0B3B2B; /* Deep Forest Green from Menu Cards */
+  --color-sage-950: #08291e; /* Extremely dark green for canvas background */
+  --color-nest-peach: #EBA579; /* Warm Peach from Menu Cards */
+  /* Cream / Neutral Palette */
+  --color-cream-50: #FDFCFA;
+  --color-cream-100: #F8F5EF;
+  --color-cream-200: #F0EBE1;
+  --color-beige-100: #E7DCCF;
+  --color-beige-200: #D4C5B3;
+
+  /* Semantic and Functional Colors */
+  --color-text-primary: #2D2D2D;
+  --color-text-secondary: #5a5a5a;
+  --color-text-muted: #8a8a8a;
+  --color-surface-elevated: #FFFFFF;
+  --color-border-subtle: rgba(45, 45, 45, 0.08);
+
+  --color-veg: #4a7c59;
+  --color-non-veg: #8b4513;
+  --color-popular: #c9a227;
+  --color-chef-pick: #6E8B7E;
+}
+
+:root {
+  /* Fluid Typography Scale (using CSS clamp) */
+  --text-display: clamp(3rem, 8vw, 6rem);
+  --text-h1: clamp(2rem, 5vw, 3.5rem);
+  --text-h2: clamp(1.5rem, 3vw, 2.25rem);
+  --text-h3: clamp(1.125rem, 2vw, 1.5rem);
+  --text-body: clamp(0.875rem, 1.2vw, 1rem);
+  --text-caption: clamp(0.75rem, 1vw, 0.875rem);
+  --text-overline: 0.75rem;
+
+  /* Fluid Spacing Scale (8px grid base) */
+  --space-xs: clamp(0.5rem, 1vw, 0.75rem);
+  --space-sm: clamp(0.75rem, 1.5vw, 1rem);
+  --space-md: clamp(1rem, 2vw, 1.5rem);
+  --space-lg: clamp(1.5rem, 3vw, 2.5rem);
+  --space-xl: clamp(2.5rem, 5vw, 4rem);
+  --space-2xl: clamp(4rem, 8vw, 6rem);
+  --space-3xl: clamp(6rem, 12vw, 10rem);
+
+  /* Layout Containers */
+  --container-max: 1400px;
+  --container-narrow: 900px;
+  --container-padding: clamp(1rem, 4vw, 3rem);
+
+  /* Motion Tokens */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-in-out-sine: cubic-bezier(0.37, 0, 0.63, 1);
+  
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-dramatic: 800ms;
+
+  /* Theme mappings */
+  --background: #F8F5EF;      /* cream-100 */
+  --foreground: #2D2D2D;      /* text-primary */
+}
+
+/* Base resets & layout settings */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Utilities for Fluid Design Tokens */
+.font-display { font-family: var(--font-serif); }
+.font-serif { font-family: var(--font-serif); }
+
+.text-fluid-display { font-size: var(--text-display); line-height: 1.1; letter-spacing: -0.02em; }
+.text-fluid-h1 { font-size: var(--text-h1); line-height: 1.2; letter-spacing: -0.01em; }
+.text-fluid-h2 { font-size: var(--text-h2); line-height: 1.3; }
+.text-fluid-h3 { font-size: var(--text-h3); line-height: 1.4; }
+.text-fluid-body { font-size: var(--text-body); line-height: 1.6; }
+.text-fluid-caption { font-size: var(--text-caption); line-height: 1.5; }
+.text-fluid-overline { font-size: var(--text-overline); text-transform: uppercase; letter-spacing: 0.1em; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream-50);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-sage-300);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sage-400);
+}
